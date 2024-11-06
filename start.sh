@@ -179,7 +179,7 @@ fi
 
 # Output Dashboard access address and Secret
 echo ''
-echo -e "Clash Dashboard 访问地址: http://<ip>:9090/ui"
+echo -e "Clash Dashboard 访问地址: http://<ip>:7896/ui"
 echo -e "Secret: ${Secret}"
 echo ''
 
@@ -187,11 +187,11 @@ echo ''
 cat>/etc/profile.d/clash.sh<<EOF
 # 开启系统代理
 function proxy_on() {
-	export http_proxy=http://127.0.0.1:7890
-	export https_proxy=http://127.0.0.1:7890
+	export http_proxy=http://127.0.0.1:7893
+	export https_proxy=http://127.0.0.1:7893
 	export no_proxy=127.0.0.1,localhost
-    	export HTTP_PROXY=http://127.0.0.1:7890
-    	export HTTPS_PROXY=http://127.0.0.1:7890
+    	export HTTP_PROXY=http://127.0.0.1:7893
+    	export HTTPS_PROXY=http://127.0.0.1:7893
  	export NO_PROXY=127.0.0.1,localhost
 	echo -e "\033[32m[√] 已开启代理\033[0m"
 }

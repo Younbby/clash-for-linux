@@ -220,11 +220,11 @@ template_path = ""
 
 [[template.globals]]
 key = "clash.http_port"
-value = "7890"
+value = "7893"
 
 [[template.globals]]
 key = "clash.socks_port"
-value = "7891"
+value = "7894"
 
 [[template.globals]]
 key = "clash.allow_lan"
